@@ -1,8 +1,12 @@
 import Header from "./components/header";
 import WayToTeach from "./components/WayToTeach";
 import { ways } from "./data";
+import Button from "./components/Button/Button";
 
 export default function App() {
+  function handleClick(type) {
+    console.log("button clicked", type);
+  }
   return (
     <div>
       <Header />
@@ -17,6 +21,9 @@ export default function App() {
             <WayToTeach {...ways[1]}></WayToTeach>
             <WayToTeach {...ways[2]}></WayToTeach>
             <WayToTeach {...ways[3]}></WayToTeach>
+            <Button onClick={() => handleClick("way")}>Подход</Button>
+            <Button onClick={() => handleClick("easy")}>Доступность</Button>
+            <Button onClick={() => handleClick("program")}>Концентрация</Button>
           </ul>
         </section>
       </main>
