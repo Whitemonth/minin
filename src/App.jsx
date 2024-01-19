@@ -13,6 +13,7 @@ export default function App() {
       <main>
         <section>
           <h3>Тут типа это оппа ага смехотура то ебать кхе кхе</h3>
+          <h3>Тут типа это оппа ага смехотура то ебать кхе кхе</h3>
           <ul>
             <WayToTeach
               title={ways[0].title}
