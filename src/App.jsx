@@ -26,7 +26,7 @@ export default function App() {
             <Button onClick={() => handleClick("way")}>Подход</Button>
             <Button onClick={() => handleClick("easy")}>Доступность</Button>
             <Button onClick={() => handleClick("program")}>Концентрация</Button>
-            <TextField />
+            <TextField text={"Better"} />
           </ul>
         </section>
       </main>
