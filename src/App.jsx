@@ -2,6 +2,7 @@ import Header from "./components/header";
 import WayToTeach from "./components/WayToTeach";
 import { ways } from "./data";
 import Button from "./components/Button/Button";
+import TextField from "./components/TextField/TextField";
 
 export default function App() {
   function handleClick(type) {
@@ -25,6 +26,7 @@ export default function App() {
             <Button onClick={() => handleClick("way")}>Подход</Button>
             <Button onClick={() => handleClick("easy")}>Доступность</Button>
             <Button onClick={() => handleClick("program")}>Концентрация</Button>
+            <TextField />
           </ul>
         </section>
       </main>
