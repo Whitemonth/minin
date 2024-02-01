@@ -5,18 +5,10 @@ import Button from "./components/Button/Button";
 import { useState } from "react";
 
 export default function App() {
-  const stateArray = useState("Нажми на кнопку");
-
-  //handler for button clicked action
-  let content = "Нажми на кнопку";
-
-  console.log(stateArray);
-
-  console.log("app component render");
+  const [content, setContent] = useState("Нажми на кнопку");
 
   function handleClick(type) {
-    console.log("button clicked", type);
-    content = type;
+    setContent(type);
   }
 
   return (
