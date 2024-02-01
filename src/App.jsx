@@ -2,6 +2,7 @@ import Header from "./components/header";
 import WayToTeach from "./components/WayToTeach";
 import { ways } from "./data";
 import Button from "./components/Button/Button";
+<<<<<<< HEAD
 import { useState } from "react";
 
 export default function App() {
@@ -14,6 +15,13 @@ export default function App() {
 
   console.log("app component render");
 
+=======
+import { useState, useSyncExternalStore } from "react";
+
+export default function App() {
+  const stateArray = useState();
+  let content = "Нажми на кнопку";
+>>>>>>> 0802fe7aef5cb56b071286dc50eaadaf9afb0e77
   function handleClick(type) {
     console.log("button clicked", type);
     content = type;
